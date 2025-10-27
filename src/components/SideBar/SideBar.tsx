@@ -7,14 +7,13 @@ interface SideBarProps {
         children: ReactNode;
 }
       
-
 const SideBar = ({onClickNewChat, children} : SideBarProps) => {
         return(
                 <div style={{ display: 'flex', height: '100%', width: '100%' }}>
                         {/* Sidebar fixa */}
                         <div className="sidebar">
                                 <div className="elementsInCenter">
-                                        <img src={logo} alt="Logo do Sistema" />
+                                        <h2>SaúdeLink</h2>
                                 </div>
                                 <Button className="btn-newChat" onClick={onClickNewChat} variant="contained">Nova Análise</Button>
                         </div>
@@ -22,11 +21,10 @@ const SideBar = ({onClickNewChat, children} : SideBarProps) => {
                         {/* Conteúdo principal */}
                         <div
                                 style={{
-                                        marginLeft: '280px',
+                                        marginLeft: '240px',
                                         paddingLeft: '10px',
                                         flex: 1,
                                         overflowY: 'auto',
-                                        height: '100%',
                                 }}
                         >
                                 {children}
