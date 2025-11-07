@@ -5,7 +5,7 @@ interface Response {
         chat_id: string;
 }
 
-interface Periodo {
+export interface Periodo {
     data_inicio: string;
     data_fim: string;  
 }

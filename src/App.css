@@ -79,6 +79,14 @@
         align-items: center;
 }
 
+.chat-input img {
+        width: 24px;
+        transition: all 0.1s;
+}
+.chat-input .confirm-btn:hover img {
+        transform: scale(1.1);
+}
+
 .server-container {
         display: flex;
         justify-content: flex-start;
@@ -150,3 +158,8 @@ h2 {
         pulse 1s ease-in-out infinite;
 }
 
+.confirm-btn {
+        height: 56px !important;
+        color: #105459 !important;
+        border-color: #105459 !important;
+}
